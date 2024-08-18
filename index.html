@@ -22,6 +22,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              fontFamily:{
+                manrope:['Manrope', 'sans-serif']
               }
             }
           }
@@ -30,13 +33,13 @@
 
 
 </head>
-<body>
+<body class="font-manrope">
 
     <!-- main content -->
      <main class="max-w-screen-xl mx-auto px-5 md:px-16 lg:px-28">
 
         <!-- header section -->
-         <header class="lg:flex pt-10 mb-20">
+        <header class="lg:flex pt-10 mb-20">
             <!-- text content -->
              <div>
                 <h1 class="text-5xl font-bold md:text-7xl mb-5">It's good <br> tea time at The <br> Tea House</h1>
@@ -61,10 +64,10 @@
                     </div>
                 </div>
               </div>
-         </header>
+        </header>
 
          <!-- featured section -->
-          <section class="py-8 lg:py-24">
+        <section class="py-8 lg:py-24">
             <!-- title -->
             <div class=" mx-auto text-center w-4/5">
                 <h2 class="text-3xl md:text-4xl font-bold mb-5" >Our Featured Products</h2>
@@ -112,10 +115,10 @@
 
             </div>
 
-          </section>
+        </section>
 
-    <!-- Great Tea Section -->     
-     <section class="mb-24">
+        <!-- Great Tea Section -->     
+        <section class="mb-24">
         <div class="grid grid-cols-1 lg:grid-cols-2">
         <!-- images -->
          <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6 mb-6">
@@ -148,10 +151,10 @@
 
         </div>
 
-     </section> 
+        </section> 
 
-    <!-- review secion -->
-     <section class="mb-24">
+        <!-- review secion -->
+        <section class="mb-24">
         <!-- grid container -->
         <div class="bg-gradient-to-r from-orange-500 to-red-500 px-4 md:px-14 py-8 md:py-14 items-center grid grid-cols-1 md:grid-cols-2  rounded-xl">
 
@@ -213,11 +216,10 @@
 
         </div>
 
-     </section>
+        </section>
 
-
-    <!-- news and event section -->
-      <section class="mb-24">
+        <!-- news and event section -->
+        <section class="mb-24">
          <!-- title -->
          <div class=" mx-auto text-center w-4/5">
             <h2 class="text-3xl md:text-4xl font-bold mb-5" >News & Events</h2>
@@ -260,12 +262,85 @@
             </div>
 
          </div>
-      </section>
+        </section>
 
-
-
-      
      </main>
+
+     <!-- footer section start here -->
+     <footer class="bg-gradient-to-r from-red-100 to-orange-50">
+        <div class="max-w-screen-xl mx-auto px-5 md:px-16 lg:px-28 py-10 md:py-24">
+
+            <!-- footer heading -->
+            <div class="flex items-center justify-between">
+                <div >
+                    <img class="w-10" src="./images/cup.png" alt="logo">
+                </div>
+                <div class="flex items-center text-gray-600">
+                    <h5 class="mr-8 text-base font-medium">Ready to get strated?</h5> 
+                    <button class=" text-white bg-gradient-to-r from-orange-500 to-red-500 px-4 py-2 rounded-lg font-semibold">Get Started</button>
+                </div>
+            </div>
+
+            <!-- anchor links -->
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-y-8">
+
+                <!-- footer col -1 -->
+                 <div>
+                    <h3 class="font-bold text-lg mb-3">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-orange-600 text-sm" href="#">Home</a></li>
+                        <li><a class="hover:text-orange-600 text-sm" href="#">About Us</a></li>
+                        <li><a class="hover:text-orange-600 text-sm" href="#">Insurance</a></li>
+                        <li><a class="hover:text-orange-600 text-sm" href="#">Privacy Policy</a></li>
+                    </ul>
+                 </div>
+
+                 <!-- footer col -2 -->
+                 <div>
+                    <h3 class="font-bold text-lg mb-3">Our Service</h3>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-orange-600 text-sm" href="#">Life Insurance</a></li>
+                        <li><a class="hover:text-orange-600 text-sm" href="#">Car Insurance</a></li>
+                        <li><a class="hover:text-orange-600 text-sm" href="#">Health Insurance</a></li>
+                        <li><a class="hover:text-orange-600 text-sm" href="#">House Insurance</a></li>
+                    </ul>
+                 </div>
+
+                 <!-- footer col -3 -->
+                 <div>
+                    <h3 class="font-bold text-lg mb-3">Help</h3>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-orange-600 text-sm" href="#">FAQs</a></li>
+                        <li><a class="hover:text-orange-600 text-sm" href="#">Contact Us</a></li>
+                        
+                    </ul>
+                 </div>
+
+                 <!-- sent msg section 4 -->
+                 <div>
+                    <h3 class="font-semibold text-lg mb-3 max-w-40">Subscribe to our newsletter</h3>
+                    <!-- input fild -->
+                    <div class="">
+                        <input type="email" placeholder="Email Address" class="bg-transparent border-b-2 border-gray-400 w-4/6 text-sm py-2 overflow-hidden">
+                        <i class="fa-solid fa-chevron-right rounded-full text-white bg-gradient-to-r from-orange-500 to-red-500 w-7 h-7 justify-center items-center inline-flex"></i>
+                    </div>
+
+                    <!-- social media section -->
+                     <div class="flex justify-between w-2/5 mb-2 mt-8">
+                        <i class="fa-brands fa-square-facebook text-gray-600  hover:text-orange-600 text-2xl"></i>
+                        <i class="fa-brands fa-square-x-twitter text-gray-600  hover:text-orange-600 text-2xl"></i>
+                        <i class="fa-brands fa-square-instagram text-gray-600 hover:text-orange-600 text-2xl"></i>
+                     </div>
+                 </div>
+
+             </div>
+
+                     <!-- copy write text -->
+                     <div class="text-center mt-10">
+                        <small class="text-gray-600">Rafi &copy; 2024 UIDesign.to - All rights reserved.</small>
+                      </div>
+        </div>
+     </footer>
     
 </body>
 </html>
